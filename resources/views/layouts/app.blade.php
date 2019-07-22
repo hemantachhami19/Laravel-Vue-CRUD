@@ -79,8 +79,4 @@
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
+
