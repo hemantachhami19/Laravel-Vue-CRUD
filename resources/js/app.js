@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -19,13 +20,14 @@ const routes = [
     {
         path: '/',
         components: {
-            companiesIndex: EmployeesIndex
+            employeesIndex: EmployeesIndex
         }
     },
-    {path: 'employees/create', component: EmployeesIndex, name: 'createEmployee'},
+    {path: 'employees/create', component: EmployeesCreate, name: 'createEmployee'},
     {path: 'employees/edit/:id', component: EmployeesEdit, name: 'editEmployee'},
 ]
 
+//Vue.Component('example', require('./components/ExampleComponent.vue'));
 const router = new VueRouter({ routes })
 
 const app = new Vue({ router }).$mount('#app')

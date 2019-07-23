@@ -12,7 +12,6 @@
                     <tr>
                         <th>Name</th>
                         <th>Address</th>
-                        <th>Website</th>
                         <th>Email</th>
                         <th width="100">&nbsp;</th>
                     </tr>
@@ -21,10 +20,10 @@
                     <tr v-for="employee, index in employees">
                         <td>{{ employee.name }}</td>
                         <td>{{ employee.address }}</td>
-                        <td>{{ employee.website }}</td>
+
                         <td>{{ employee.email }}</td>
                         <td>
-                            <router-link :to="{name: 'editCompany', params: {id: employee.id}}" class="btn btn-xs btn-default">
+                            <router-link :to="{name: 'editEmployee', params: {id: employee.id}}" class="btn btn-xs btn-default">
                                 Edit
                             </router-link>
                             <a href="#"
